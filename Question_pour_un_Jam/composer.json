@@ -1,4 +1,6 @@
 {
+    "name": "hugol/question_pou_un_jam",
+    "description": "projet_infra",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "dev",
