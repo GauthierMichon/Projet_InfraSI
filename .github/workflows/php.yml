@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: va dans le bon dossier
-      run: cd Question_pour_un_jam/
+      run: cd Question_pour_un_Jam/
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
