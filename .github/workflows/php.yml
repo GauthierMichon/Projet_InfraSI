@@ -78,10 +78,3 @@ jobs:
         run: mkdir --parents tools/php-cs-fixer
       - name: install suite
         run: composer require --working-dir=tools/php-cs-fixer friendsofphp/php-cs-fixer
-
-      ## —— Tests ✅ ———————————————————————————————————————————————————————————
-
-      - name: Run functionnal and unit tests
-        run: |
-          cp phpunit.xml.ci phpunit.xml
-          ./vendor/bin/phpunit --testsuite='main'
