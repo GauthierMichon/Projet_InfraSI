@@ -38,6 +38,7 @@ class ComposerStaticInit4a4271e6310a4a123469be9fe33d5aa0
         ),
         'S' => 
         array (
+            'Symfony\\Requirements\\' => 21,
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -174,6 +175,10 @@ class ComposerStaticInit4a4271e6310a4a123469be9fe33d5aa0
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Requirements\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/requirements-checker/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -581,6 +586,7 @@ class ComposerStaticInit4a4271e6310a4a123469be9fe33d5aa0
         'App\\Repository\\ThemesRepository' => __DIR__ . '/../..' . '/src/Repository/ThemesRepository.php',
         'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/src/Repository/UserRepository.php',
         'App\\Security\\AuthentificatorControllerAuthenticator' => __DIR__ . '/../..' . '/src/Security/AuthentificatorControllerAuthenticator.php',
+        'App\\Tests\\AppTest' => __DIR__ . '/../..' . '/tests/AppTest.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -5111,6 +5117,11 @@ class ComposerStaticInit4a4271e6310a4a123469be9fe33d5aa0
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php73\\Php73' => __DIR__ . '/..' . '/symfony/polyfill-php73/Php73.php',
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
+        'Symfony\\Requirements\\PhpConfigRequirement' => __DIR__ . '/..' . '/symfony/requirements-checker/src/PhpConfigRequirement.php',
+        'Symfony\\Requirements\\ProjectRequirements' => __DIR__ . '/..' . '/symfony/requirements-checker/src/ProjectRequirements.php',
+        'Symfony\\Requirements\\Requirement' => __DIR__ . '/..' . '/symfony/requirements-checker/src/Requirement.php',
+        'Symfony\\Requirements\\RequirementCollection' => __DIR__ . '/..' . '/symfony/requirements-checker/src/RequirementCollection.php',
+        'Symfony\\Requirements\\SymfonyRequirements' => __DIR__ . '/..' . '/symfony/requirements-checker/src/SymfonyRequirements.php',
         'Twig\\Cache\\CacheInterface' => __DIR__ . '/..' . '/twig/twig/src/Cache/CacheInterface.php',
         'Twig\\Cache\\FilesystemCache' => __DIR__ . '/..' . '/twig/twig/src/Cache/FilesystemCache.php',
         'Twig\\Cache\\NullCache' => __DIR__ . '/..' . '/twig/twig/src/Cache/NullCache.php',

@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'f30907f5db9442630dbf55d65f217b5d5c6c3b02',
+    'reference' => 'fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
     'name' => 'hugol/question_pou_un_jam',
   ),
   'versions' => 
@@ -221,7 +221,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'f30907f5db9442630dbf55d65f217b5d5c6c3b02',
+      'reference' => 'fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
     ),
     'laminas/laminas-code' => 
     array (
@@ -882,6 +882,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'fd6bb40190b1719abbe831be09adf38e0744d5f5',
+    ),
+    'symfony/requirements-checker' => 
+    array (
+      'pretty_version' => 'v2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e3d5565eb69a4a2195905c8669f32e988c8e6be0',
     ),
     'symfony/routing' => 
     array (
