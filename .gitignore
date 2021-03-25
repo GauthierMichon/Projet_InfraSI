@@ -12,6 +12,8 @@
 
 vendor/*
 !vendor/autoload.php
+vendor/*
+!vendor/composer/
 !vendor/symfony
 vendor/symfony/*
 !vendor/symfony/phpunit-bridge
