@@ -7,7 +7,7 @@
 /public/bundles/
 /var/
 /vendor/*
-!/vendor/symfony/phpunit-bridge/bin/
+!*/vendor/symfony/phpunit-bridge/bin/*
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
