@@ -17,8 +17,8 @@ jobs:
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
-    #- name: Marche stp
-    #  run: php bin/phpunit
+    - name: Marche stp
+      run: php bin/phpunit
 
     - name: Cache Composer packages
       id: composer-cache
