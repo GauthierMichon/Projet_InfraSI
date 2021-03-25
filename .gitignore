@@ -6,19 +6,7 @@
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
-/vendor/*
-!*/vendor/symfony/phpunit-bridge/bin/
 
-
-vendor/*
-!vendor/autoload.php
-vendor/*
-!vendor/composer/
-!vendor/symfony
-vendor/symfony/*
-!vendor/symfony/phpunit-bridge
-vendor/symfony/phpunit-bridge/*
-!vendor/symfony/phpunit-bridge/bin
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
