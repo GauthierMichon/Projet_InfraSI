@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var
+sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:$(whoami):rwX var
 dir=$(cd "${0%[/\\]*}" > /dev/null; cd "../symfony/requirements-checker/bin" && pwd)
 
 if [ -d /proc/cygdrive ]; then
