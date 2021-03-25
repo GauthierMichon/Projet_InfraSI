@@ -60,7 +60,7 @@ jobs:
           node-version: '12'
           registry-url: npm.fontawesome.com
       - name: Composer a besoin de encore
-      - run: composer require symfony/webpack-encore-bundle --dev
+        run: composer require symfony/webpack-encore-bundle --dev
 
       - run: yarn install
         env:
