@@ -35,10 +35,10 @@ jobs:
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
     
-    - name: OSKAR-PHP-CS-Fixer
+    #- name: OSKAR-PHP-CS-Fixer
       # You may pin to the exact commit or the version.
       # uses: OskarStark/php-cs-fixer-ga@a5da689c8f86e9e588934211a107d2a087a86e4e
-      uses: OskarStark/php-cs-fixer-ga@2.18.3
+      #uses: OskarStark/php-cs-fixer-ga@2.18.3
 
     # - name: Run test suite
     #   run: composer run-script test
