@@ -53,25 +53,6 @@ jobs:
         with:
           redis version: '5'
 
-      ## —— Yarn 🐱 ————————————————————————————————————————————————————————————
-      - name: Composer a besoin de encore
-        run: composer require symfony/webpack-encore-bundle --dev
-      - name: Yarn install
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12'
-          registry-url: npm.fontawesome.com
-        run: yarn install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
-
-      - run: yarn add @symfony/webpack-encore --dev
-      - run: yarn add sass-loader@^9.0.1 node-sass --dev
-      - run: npm uninstall node-sass
-      - run: npm install node-sass@4.14.1
-
-      - name: Yarn build
-        run: yarn encore dev
 
       # —— Composer 🧙‍️ —————————————————————————————————————————————————————————
       - name: Validate composer.json and composer.lock
