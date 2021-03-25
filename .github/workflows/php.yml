@@ -24,6 +24,12 @@ jobs:
       matrix:
         php-versions: ['7.4', '8.0']
     steps:
+      # —— Check Elasticsearch 🔎 ——————————————————————————————————————————————
+      - name: Check the Elasticsearch connection from runner host
+        run: |
+          curl -fsSL "http://localhost:$ES_HTTP_PORT"
+          curl -fsSL "http://localhost:$ES_HTTP_PORT/_cluster/health?pretty"
+
       # —— Setup Github actions 🐙 —————————————————————————————————————————————
       # https://github.com/actions/checkout (official)
       - name: Checkout
@@ -56,6 +62,7 @@ jobs:
           node-version: '12'
           registry-url: npm.fontawesome.com
       
+
       - run: yarn install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
