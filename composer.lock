@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "c03cc4d188e7c028ca64160def72c1fe",
+=======
+    "content-hash": "167f28c73d519eff8a4653e138b5ff47",
+>>>>>>> f72114c264fa24fc68f3dceacb068dcd0f4d8a72
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -7300,6 +7304,7 @@
             "time": "2020-11-14T09:36:49+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "fzaninotto/faker",
             "version": "v1.9.2",
             "source": {
@@ -7351,6 +7356,8 @@
             "time": "2020-12-11T09:56:16+00:00"
         },
         {
+=======
+>>>>>>> f72114c264fa24fc68f3dceacb068dcd0f4d8a72
             "name": "nikic/php-parser",
             "version": "v4.10.4",
             "source": {
