@@ -78,20 +78,8 @@ jobs:
         run: mkdir --parents tools/php-cs-fixer
       - name: install suite
         run: composer require --working-dir=tools/php-cs-fixer friendsofphp/php-cs-fixer
-      - name: Coding standards checks (php_codesniffer + php-cs-fixer)
-        run: make cs
-        if: matrix.php-versions == '7.4'
-
-      ## —— Static analysis ✨ —————————————————————————————————————————————————
-      - name: Static analysis of PHP code (PHPStan)
-        run: make static-analysis
-        if: matrix.php-versions == '7.4'
 
       ## —— Tests ✅ ———————————————————————————————————————————————————————————
-      - name: Load Doctrine fixtures and populate the Elasticsearch indexes
-        run: |
-          make load-fixtures
-          make populate
 
       - name: Run functionnal and unit tests
         run: |
