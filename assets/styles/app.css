@@ -1,0 +1,21 @@
+html, body{
+    height: 100%;
+    background-color: #fdfbfb;
+}
+ 
+body{
+    text-align : center;
+    width : 100%;
+    display : grid;
+    justify-content : center;
+    align-items : center;
+    flex-wrap : wrap;
+}
+ 
+.btn{
+    margin: 16px;
+}
+ 
+.btn:hover{
+    font-size: 15px;
+}

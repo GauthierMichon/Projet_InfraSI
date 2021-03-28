@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
+    'reference' => '79cea9eb98067d78d88f901853e31628faa55caa',
     'name' => 'hugol/question_pou_un_jam',
   ),
   'versions' => 
@@ -198,7 +198,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
+      'reference' => '79cea9eb98067d78d88f901853e31628faa55caa',
     ),
     'laminas/laminas-code' => 
     array (
@@ -1053,6 +1053,15 @@
       array (
       ),
       'reference' => '4b28c24db64156ad892300be7fae1978bed075ce',
+    ),
+    'symfony/webpack-encore-bundle' => 
+    array (
+      'pretty_version' => 'v1.11.1',
+      'version' => '1.11.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '395b60a549ded8e7f77f0d551815d7555e2d9eb0',
     ),
     'symfony/yaml' => 
     array (

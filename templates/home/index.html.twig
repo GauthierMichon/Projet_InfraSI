@@ -1,18 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Questions pour un jam
+{% endblock %}
 
 {% block body %}
 
-    {% for theme in Themes %}
-    <div>
-        <a href="questions/{{ theme.nomtheme }}/1">{{ theme.nomtheme }}</a>
-    </div>
-    {% endfor %}
+	{% for theme in Themes %}
+		<div>
+			<a class="btn btn-outline-primary" style="" href="questions/{{ theme.nomtheme }}/1">{{ theme.nomtheme }}</a>
+		</div>
+	{% endfor %}
 
-    {% if app.user %}
-        <a href="logout">Se déconnecter</a>
-    {% else %}
-        <a href="login">Se connecter</a>
-    {% endif %}
+	{% if app.user %}
+		<a class="btn btn-outline-danger" href="logout">Se déconnecter</a>
+	{% else %}
+		<a class="btn btn-outline-success" href="login">Se connecter</a>
+		<a class="btn btn-outline-success" href="register">S'inscrire'</a>
+	{% endif %}
 {% endblock %}

@@ -1,21 +1,30 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Hello HomeController!
+{% endblock %}
 
 {% block body %}
 
-    <div>
-        <p>{{ question.question }}</p>
+	<div>
+		<p>{{ question.question }}</p>
 
 
-        <a href="{{ id }}/reponse"><p>{{ question.reponse1 }}</p></a>
-        <a href="{{ id }}/reponse"><p>{{ question.reponse2 }}</p></a>
-        <a href="{{ id }}/reponse"><p>{{ question.reponse3 }}</p></a>
-        <a href="{{ id }}/reponse"><p>{{ question.reponse4 }}</p></a>
+		<a href="{{ id }}/reponse">
+			<p>{{ question.reponse1 }}</p>
+		</a>
+		<a href="{{ id }}/reponse">
+			<p>{{ question.reponse2 }}</p>
+		</a>
+		<a href="{{ id }}/reponse">
+			<p>{{ question.reponse3 }}</p>
+		</a>
+		<a href="{{ id }}/reponse">
+			<p>{{ question.reponse4 }}</p>
+		</a>
 
-    </div>
+	</div>
 
-    {% if app.user %}
-        <a href="../../logout">Se déconnecter</a>
-    {% endif %}
+	{% if app.user %}
+		<a class="btn btn-outline-danger" href="../../logout">Se déconnecter</a>
+	{% endif %}
 {% endblock %}

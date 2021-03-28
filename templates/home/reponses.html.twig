@@ -1,47 +1,48 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Hello HomeController!
+{% endblock %}
 
 {% block body %}
 
-    <div>
-        <p>{{ question.question }}</p>
+	<div>
+		<p>{{ question.question }}</p>
 
-        {% if question.ReponseJuste == 1 %}
-            <p style="color: green">{{ question.reponse1 }}</p>
-        {% else %}
-            <p style="color: red">{{ question.reponse1 }}</p>
-        {% endif %}
+		{% if question.ReponseJuste == 1 %}
+			<p style="color: green">{{ question.reponse1 }}</p>
+		{% else %}
+			<p style="color: red">{{ question.reponse1 }}</p>
+		{% endif %}
 
-        {% if question.ReponseJuste == 2 %}
-            <p style="color: green">{{ question.reponse2 }}</p>
-        {% else %}
-            <p style="color: red">{{ question.reponse2 }}</p>
-        {% endif %}
+		{% if question.ReponseJuste == 2 %}
+			<p style="color: green">{{ question.reponse2 }}</p>
+		{% else %}
+			<p style="color: red">{{ question.reponse2 }}</p>
+		{% endif %}
 
-        {% if question.ReponseJuste == 3 %}
-            <p style="color: green">{{ question.reponse3 }}</p>
-        {% else %}
-            <p style="color: red">{{ question.reponse3 }}</p>
-        {% endif %}
+		{% if question.ReponseJuste == 3 %}
+			<p style="color: green">{{ question.reponse3 }}</p>
+		{% else %}
+			<p style="color: red">{{ question.reponse3 }}</p>
+		{% endif %}
 
-        {% if question.ReponseJuste == 4 %}
-            <p style="color: green">{{ question.reponse4 }}</p>
-        {% else %}
-            <p style="color: red">{{ question.reponse4 }}</p>
-        {% endif %}
+		{% if question.ReponseJuste == 4 %}
+			<p style="color: green">{{ question.reponse4 }}</p>
+		{% else %}
+			<p style="color: red">{{ question.reponse4 }}</p>
+		{% endif %}
 
-        {% if id == id_max %}
-            <a href="../../../home">Menu</a>
-        {% else %}
-            <a href="../{{ id + 1}}">Suivant</a>
-        {% endif %}
+		{% if id == id_max %}
+			<a class="btn btn-outline-success" href="../../../home">Menu</a>
+		{% else %}
+			<a class="btn btn-outline-success" href="../{{ id + 1}}">Suivant</a>
+		{% endif %}
 
 
-        {% if app.user %}
-            <a href="../../../logout">Se déconnecter</a>
-        {% endif %}
-        
+		{% if app.user %}
+			<a class="btn btn-outline-danger" href="../../../logout">Se déconnecter</a>
+		{% endif %}
 
-    </div>
+
+	</div>
 {% endblock %}

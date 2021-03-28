@@ -137,10 +137,11 @@ final class Versions
   'symfony/maker-bundle' => 'v1.30.2@a395a85aa4ded6c1fa3da118d60329b64b6c2acd',
   'symfony/phpunit-bridge' => 'v5.2.4@9d85d900c1afe29138a0d5854505eb684bc3ac6d',
   'symfony/web-profiler-bundle' => 'v5.2.4@4b28c24db64156ad892300be7fae1978bed075ce',
-  'symfony/polyfill-ctype' => '*@fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
-  'symfony/polyfill-iconv' => '*@fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
-  'symfony/polyfill-php72' => '*@fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
-  'hugol/question_pou_un_jam' => 'dev-main@fce3d9ae47f2ae15b85a16885a138146cc6ec6fc',
+  'symfony/webpack-encore-bundle' => 'v1.11.1@395b60a549ded8e7f77f0d551815d7555e2d9eb0',
+  'symfony/polyfill-ctype' => '*@79cea9eb98067d78d88f901853e31628faa55caa',
+  'symfony/polyfill-iconv' => '*@79cea9eb98067d78d88f901853e31628faa55caa',
+  'symfony/polyfill-php72' => '*@79cea9eb98067d78d88f901853e31628faa55caa',
+  'hugol/question_pou_un_jam' => 'dev-main@79cea9eb98067d78d88f901853e31628faa55caa',
 );
 
     private function __construct()
