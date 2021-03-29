@@ -134,5 +134,10 @@ dbc_dbpass='P@ssw0rd'
 
 ## Desormais, rendez vous sur votre navigateur pour la suite
 
+Rentrez votre addresse ip suivi de /phpmyadmin dans la barre de recherche de votre navigateur de cette maniere :
+XX.XX.XX.XX/phpmyadmin
 
+Vous arriverez sur cette page :
+
+![ekip](https://imgur.com/a/JxHwk32)
 
