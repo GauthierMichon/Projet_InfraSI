@@ -139,5 +139,7 @@ XX.XX.XX.XX/phpmyadmin
 
 Vous arriverez sur cette page :
 
-![ekip](https://imgur.com/a/JxHwk32)
+![](https://imgur.com/akxnoya)
+
+rentrez 
 
