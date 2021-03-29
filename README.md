@@ -24,6 +24,9 @@ sudo apt install -y php
 sudo apt install -y mysql-server
 sudo mysql_secure_installation
 sudo apt install phpmyadmin
+sudo apt install cron
+sudo systemctl enable cron
+sudo apt install borgbackup
 
 ```
 
@@ -152,4 +155,37 @@ Rentrez les informations suivantes :
  Importez le fichier question_pour_un_jam.sql qui est dans le repo et executez et voila la connection à votre base de données est effectuée !
 
  ## Autres fonctionnalités
- 
+
+ ### 1. Borg
+
+ Borg va nous servir à faire des backups et on va pouvoir automatiser tout ça avec cron !!
+
+ On va d'abord initialiser un repo de notre choix avec borg de cette manière :
+```
+borg init --encryption none /chemin/du/repo
+```
+
+### 2. Cron
+Pour pouvoir faire des backups quotidiennes il faut lier ça à cron en modifiant un fichier :
+```
+crontab -e
+```
+
+Rentrez ces informations dans ce fichier :
+```
+0 12 * * * borg create ~/backup::QuestionPourUnJam-$(date '+\%m-\%d-\%Y') ~/projet/
+0 12 * * * borg prune -v --list --keep-within=7d ~/backup
+```
+
+La première ligne va nous servir à réaliser les sauvegardes chaque jour à 12h.
+
+La seconde ligne va automatiquement supprimer toutes les sauvegardes réalisées il y a plus de 7 jours, chaque jour à 12h également.
+
+## Netdata
+
+Pour l'installation de netdata, rentrez cette commande :
+```
+bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+```
+et hop vous pourrez accèder à votre monitoring en accédant à cette url (où xx est votre addresse IP) :
+XX.XX.XX.XX:19999
