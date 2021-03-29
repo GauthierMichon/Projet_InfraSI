@@ -139,7 +139,17 @@ XX.XX.XX.XX/phpmyadmin
 
 Vous arriverez sur cette page :
 
-![](https://imgur.com/akxnoya)
+![](https://imgur.com/akxnoya.png)
 
-rentrez 
+Rentrez les informations suivantes :
+ - username = phpmyadmin
+ - mot de passe = P@ssw0rd
 
+ Connectez vous et dirigez-vous vers l'onglet "Importer" juste ici
+
+ ![](https://imgur.com/JzW7qk2.png)
+
+ Importez le fichier question_pour_un_jam.sql qui est dans le repo et executez et voila la connection à votre base de données est effectuée !
+
+ ## Autres fonctionnalités
+ 
